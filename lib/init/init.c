@@ -4,7 +4,7 @@
 #include <libopencm3/stm32/gpio.h>
 #include <libopencm3/stm32/rcc.h>
 
-#include "gpio_defines.h"
+#include "../include/gpio_defines.h"
 
 // Clock Initialization
 void init_clock(void) {
@@ -31,5 +31,5 @@ void init_clock(void) {
 // GPIO Initialization
 void init_gpio(void) {
   rcc_periph_clock_enable(RCC_GPIOC);
-  gpio_mode_setup(GPIOC, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO13);
+  // gpio_mode_setup(GPIOC, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO13);
 }
