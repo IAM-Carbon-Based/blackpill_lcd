@@ -9,8 +9,6 @@ int main(void) {
   lcd_init(16, 2, LCD_5x8DOTS);
 
   print("Hello World!");
-  setCursor(0, 1);
-  print("new print");
 
   while (1) {
     // gpio_toggle(GPIOC, GPIO13);         /* LED on/off */
